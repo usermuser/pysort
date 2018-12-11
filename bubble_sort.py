@@ -1,4 +1,5 @@
-alist = [3, 2, 1]
+# alist = [3, 2, 1]
+alist = [6,1,7,8,9,3,5,4,2]
 
 def bsort(a):
     tmp = ''
@@ -10,7 +11,6 @@ def bsort(a):
     return a
 
 
-print('break')
 def bsort2(a):
     tmp = ''
     print(a)

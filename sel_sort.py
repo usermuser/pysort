@@ -7,7 +7,28 @@
 
 6,1,7,8,9,3,5,4,2
 1,6,7,8,9,3,5,4,2
+
+list.index(x, [start [, end]])
+print(alist.index(8, 0, 4))
+ValueError if not in range
+Возвращает положение первого элемента со значением x (при этом поиск ведется от start до end)
 '''
 alist = [6,1,7,8,9,3,5,4,2]
+alist2 = [6,7,8,9,3,5,4,2]
+
+ins_pos=0
+tmp = ''
+for i in range(len(alist)):
+    pass
+
+def get_min(lst):
+    # get minimal number in list and its position
+    min_num = lst[0]
+    for i in range(1,len(lst)):
+        if min_num > lst[i]:
+            min_num = lst[i]
+
+    return min_num, lst.index(min_num)
+
 
 
