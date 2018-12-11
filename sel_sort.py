@@ -20,27 +20,32 @@ tmp = ''
 for i in range(len(alist)):
     pass
 
-def get_min(lst):
+def get_min(lst, ins_pos):
     # get minimal number in list and its position
-    min_num = lst[0]
-    for i in range(1,len(lst)):
+    min_num = lst[ins_pos]
+    for i in range(ins_pos,len(lst)):
         if min_num > lst[i]:
             min_num = lst[i]
 
     return min_num, lst.index(min_num)
 
 def sel_sort(lst):
-    ins_pos = 0
-    min_num, min_num_pos = get_min(lst)
-    if lst[ins_pos] == min_num:
-        pass
-    else:
-        tmp = lst[ins_pos]
-        lst[ins_pos] = lst[min_num_pos]
-        lst[min_num_pos] = tmp
+
+    for i in lst:
+        ins_pos = lst.index(i)
+        min_num, min_num_pos = get_min(lst, ins_pos)
+        if lst[ins_pos] == min_num:
+            pass
+        else:
+            tmp = lst[ins_pos]
+            lst[ins_pos] = lst[min_num_pos]
+            lst[min_num_pos] = tmp
 
     return lst
 
-print(sel_sort(alist))
+result = sel_sort(alist)
+print('restult = ',result)
+
+
 
 
