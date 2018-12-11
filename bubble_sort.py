@@ -9,11 +9,6 @@ def bsort(a):
             a[i] = tmp
     return a
 
-# print(bsort(alist))
-
-# for i in alist:
-#     print(i)
-#
 
 print('break')
 def bsort2(a):
@@ -32,10 +27,3 @@ def bsort2(a):
     return a
 
 print(bsort2(alist))
-# if alist[3]:
-#      print('yes')
-# else:
-#     print('no')
-
-
-
