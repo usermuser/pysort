@@ -24,14 +24,14 @@ def two_max(data):
         max1 = 1
         max2 = 0
     for i in range(2, length):
-        if data[i] > max1:
+        if data[i] > data[max1]:
             max1 = i
-        if max2 > max1:
+        if data[max2] < data[max1]:
             max1, max2 = max2, max1
 
     return data[max1], data[max2]
 
 
 if __name__ == '__main__':
-    print(two_max(data1))
-    print(two_max(data2))
+    assert two_max(data1) == (7, 9), f'Wrong solution!, result = {two_max(data1)}'
+    assert two_max(data2) == (8, 8), f'Wrong solution!, result = {two_max(data2)}'
