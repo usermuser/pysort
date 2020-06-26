@@ -19,7 +19,7 @@ data2 = [2, 4, 6, 8, 1, 3, 5, 7, 8]
 def two_max(data):
     length = len(data)
     max1 = 0
-    max2 = 1  # max2 must be bigger than max1
+    max2 = 1  # max2 должно быть больше чем max1 по условию задачи
     if data[max1] > data[max2]:
         max1 = 1
         max2 = 0
